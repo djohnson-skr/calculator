@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* colors:
+#1d3557 - navy blue
+#457b9d - blue
+#a8dadc - light blue
+#f1faee - white
+#e63946 - red */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+    --border: 2px solid black;
+    --radius: 6px;
+    --navy-blue: #1d3557;
+    --blue: #457b9d;
+    --light-blue: #a8dadc;
+    --white: #f1faee;
+    --red: #e63946;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    min-width: 100vw;
+}
+
+.calc-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    height: auto;
+    width: 375px;
+    padding: 15px;
+    background-color: var(--navy-blue);
+    border: var(--border);
+    border-radius: 8px;
+    row-gap: 10px;
+    column-gap: 10px}
+
+button {
+    font-family: inherit;
+    border: var(--border);
+    border-radius: var(--radius);
+    flex: 1;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--white);
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 40px;
+    background-color: var(--white);
+    border: var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+}
+
+#small {
+    font-size: 20px;
+}
+
+.whipe,
+.buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+#clear {
+    background-color: #e63946;
+}
+
+#delete {
+    background-color: #457b9d;
+}
+
+#clear:hover,
+#delete:hover {
+    filter: brightness(85%);
+}
+
+
+.buttons button:hover {
+    background-color: var(--light-blue);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-blue);
+    color: var(--navy-blue);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
