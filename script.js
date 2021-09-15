@@ -52,7 +52,6 @@ buttons.forEach(button => {
 })
 
 
-
 clearButton.addEventListener("click", function() {
     clearVariables();
     display.textContent = tempZero;
